@@ -277,9 +277,9 @@
   <script>
     console.clear();
     const tabBtn = document.querySelector('.frequency-container');
+    const tabBtns = document.querySelectorAll('.frequency-container a');
 
     tabBtn.addEventListener('click', (e) => {
-      const tabBtns = document.querySelectorAll('.frequency-container a');
       tabBtns.forEach(tabBtn => {
         tabBtn.classList.remove('active');
       })
@@ -294,6 +294,7 @@
 
     })
 
+    tabBtns[0].click();
 
   </script>
 
